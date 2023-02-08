@@ -13,8 +13,8 @@ class Graph
 public:
     Graph(int V);   // Constructor 
     Graph(int , list<int>*);// Constructor
-    void addEdge(int v, int w);   // to add an edge to graph 
-    void bridge();    // prints all bridges 
+    void AddEdge(int v, int w);   // to add an edge to graph 
+    void FindeBridge();    // prints all bridges 
 };
 
 Graph::Graph(int V)
@@ -34,7 +34,7 @@ Graph::Graph(int v, list<int>* adj)// Constructor
             addEdge(l, *o);
     }
 }
-void Graph::addEdge(int v, int w)
+void Graph::AddEdge(int v, int w)
 {
     adj[v].push_back(w);
     adj[w].push_back(v);  // Note: the graph is undirected 
@@ -78,7 +78,7 @@ void Graph::bridgeUtil(int u, bool visited[], int disc[],
 
 // DFS based function to find all bridges. It uses recursive  
 // function bridgeUtil() 
-void Graph::bridge()
+void Graph::FindeBridge()
 {
     // Mark all the vertices as not visited 
     bool* visited = new bool[V];

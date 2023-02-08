@@ -12,12 +12,12 @@ int main()
     // Create graphs given in above diagrams 
     cout << "G_1 graph bridges are  \n";
     Graph G_1(5);
-    G_1.addEdge(1, 0);
-    G_1.addEdge(0, 2);
-    G_1.addEdge(2, 1);
-    G_1.addEdge(0, 3);
-    G_1.addEdge(3, 4);
-    G_1.bridge();
+    G_1.AddEdge(1, 0);
+    G_1.AddEdge(0, 2);
+    G_1.AddEdge(2, 1);
+    G_1.AddEdge(0, 3);
+    G_1.AddEdge(3, 4);
+    G_1.FindeBridge();
 
  
 
@@ -106,7 +106,7 @@ int main()
 		*/
 		Graph G(V, adj);
 		cout << "G  graph bridges are  " << endl;
-		G.bridge();
+		G.FindeBridge();
 	}
     return 0;
 }
