@@ -31,7 +31,7 @@ Graph::Graph(int v, list<int>* adj)// Constructor
     {
         for (list<int>::iterator o = adj[l].begin(); o != adj[l].end(); ++o)
             // this->adj[l].push_back(*o
-            addEdge(l, *o);
+            ddEdge(l, *o);
     }
 }
 void Graph::AddEdge(int v, int w)
